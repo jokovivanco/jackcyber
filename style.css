@@ -34,7 +34,7 @@ section:nth-child(odd) {
 }
 
 section hr {
-	width: 500px;
+	min-width: 500px;
 	border-top: 3px dashed #666;
 }
 
