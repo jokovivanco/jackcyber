@@ -100,6 +100,7 @@ footer {
 
 @media screen and (min-width: 768px) {
         .overlay img {
-                max-width: 100%;
+                width: 300px;
+                max-height: auto;
         }
 }
