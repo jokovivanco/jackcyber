@@ -1,0 +1,99 @@
+html {
+	position: relative;
+}
+
+body {
+	margin-bottom: 50px;
+}
+
+.jumbotron img {
+	width: 150px;
+}
+
+.jumbotron p {
+	color: #666;
+}
+
+.jumbotron .photo-profile {
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+	background-position: 50% 50%;
+	background-color: #fff;
+	text-align: center;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
+}
+section {
+	min-height: 600px;
+}
+
+section:nth-child(odd) {
+	background-color: rgb(238, 238, 238);
+}
+
+section hr {
+	width: 500px;
+	border-top: 3px dashed #666;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .7);
+	z-index: 9999;
+	transform: scale(0);
+	opacity: 0;
+	transition: .5s;
+	padding: 50px;
+	text-align: center;
+}
+
+.overlay:target {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.overlay img {
+	transition: 2s .5s;
+	max-height: 100%;
+	opacity: 0;
+}
+
+.overlay:target img {
+	opacity: 1;
+}
+
+.overlay .close {
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 50%;
+	left: 50%;
+	opacity: 1;
+}
+
+.overlay .close:hover {
+	color: red;
+	opacity: 1;
+}
+
+.contact {
+	min-height: 800px;
+}
+
+footer {
+	width: 100%;
+	padding-top: 15px;
+	height: 50px;
+	background-color: #000;
+	text-align: center;
+	color: #fff;
+	font-size: .8em;
+	position: absolute;
+	bottom: 0;
+}
