@@ -97,3 +97,9 @@ footer {
 	position: absolute;
 	bottom: 0;
 }
+
+@media screen and (min-width: 768px) {
+        .overlay img {
+                max-width: 100%;
+        }
+}
