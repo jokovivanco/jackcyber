@@ -8,17 +8,26 @@ body {
 
 .jumbotron {
 	margin-top: 30px;
+	background-image: url(img/david-rodrigo-kZ1zThg6G40-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
 }
 
 .jumbotron img {
 	width: 150px;
+	filter: brightness(150%);
 }
 
-.jumbotron p {
-	color: #666;
+.jumbotron h1, .jumbotron p {
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, .9);
+	color: #fff !important;
 }
 
 .jumbotron .photo-profile {
+	border: 3px solid #fff;
 	margin: 0 auto;
 	border-radius: 50%;
 	overflow: hidden;
@@ -40,6 +49,36 @@ section:nth-child(even) {
 section hr {
 	max-width: 250px;
 	border-top: 3px dashed #666;
+}
+
+.first-p, .last-p, .about h1 {
+	opacity: 0;
+	transform: translate(-100px, 0) rotate(10deg);
+	transition: 1s;
+}
+
+.last-p {
+	transform: translate(100px, 0) rotate(10deg);
+}
+
+.about h1 {
+	transform: translate(0, -30px);
+}
+
+.first-p.appear, .last-p.appear, .about h1.appear {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.portfolio .thumbnail {
+	opacity: 0;
+	transform: translateY(-30px);
+	transition: 1s;
+}
+
+.portfolio .thumbnail.muncul {
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .overlay {
