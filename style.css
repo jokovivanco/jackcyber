@@ -6,6 +6,10 @@ body {
 	margin-bottom: 50px;
 }
 
+.jumbotron {
+	margin-top: 30px;
+}
+
 .jumbotron img {
 	width: 150px;
 }
@@ -29,7 +33,7 @@ section {
 	min-height: 600px;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
 	background-color: rgb(238, 238, 238);
 }
 
