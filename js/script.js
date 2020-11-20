@@ -10,3 +10,12 @@ $(".scroll").on('click', function(e) {
 
 });
 
+$('.close').on('click', function(e) {
+	$(this).parent().css({
+		'transform': 'scale(0)',
+		'opacity': 0
+	});
+
+	e.preventDefault();
+})
+
